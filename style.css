@@ -1,0 +1,510 @@
+@font-face {
+    font-family: 'Neilvard Three';
+    src: url('fonts/Neilvard\ Three\ Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    background-color: #b08bfa;
+    
+}
+.nav-bar-options ul{
+    display:flex;
+    gap:35px;
+    list-style: none;
+    
+}
+
+.nav-bar-options ul li a {
+    text-decoration: none; 
+    font-weight: bold;
+    color: white;
+    transition: color 0.3s, font-weight 0.3s; 
+    letter-spacing: 0.5px;
+}
+
+
+.nav-bar-options ul li .btn {
+    background-color: #d5fdf8; 
+    color: #a476ff;
+    padding: 12px 26px;
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    letter-spacing: 0.5px;
+}
+.nav-bar-options ul li .btn:hover {
+    background-color: #bbbbbb; 
+}
+.logo img{
+    height: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.home-page {
+    position: relative; /* Ajusta a margem para compensar a barra de navegação */
+    background: url('Fotos/background.png') no-repeat center center/cover;
+    height: 95vh;
+    width: 100%;
+    display: flex;
+    color: white;
+}
+
+.home-page::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.35); /* Ajuste a opacidade (0.5) conforme necessário */
+    z-index: 1;
+}
+
+.home-page .content {
+    position: relative; /* Para que o texto fique acima da sobreposição */
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start; /* Alinha horizontalmente à esquerda */
+    align-items: center; /* Centraliza verticalmente */
+    padding-top: 60px ;
+    padding-left: 175px; /* Ajusta a posição horizontal */
+    height: 100%; /* Garante que ocupa toda a altura da seção */
+
+}
+.home-page .content-text{
+
+    text-align: left; /* Alinha o texto à esquerda */
+    padding: 20px 0; /* Adiciona espaçamento interno apenas vertical */
+}
+.home-page .content-text-h1{
+    display: flex; 
+    flex-direction: column;
+}
+
+.home-page .content h1 {
+    font-family: 'Neilvard Three', sans-serif;
+    font-size: 4rem; /* Tamanho grande para o título */
+    font-weight: bold; /* Texto em negrito */
+    line-height: 0.15; /* Espaçamento entre linhas */
+    text-align: left; /* Centraliza o texto */
+    color: #ffffff; /* Cor branca */
+    text-transform: uppercase; /* Deixa o texto todo em maiúsculas */
+    margin-bottom: 20px; /* Espaçamento inferior */
+    letter-spacing: -1px;
+}
+
+.home-page .content p {
+    font-size: 1.1rem; /* Tamanho médio do texto */
+    line-height: 1.5; /* Melhora a legibilidade */
+    color: #ffffff; /* Cor branca */
+    text-align: left; /* Centraliza o texto */
+    margin-bottom: 30px; /* Espaçamento inferior */
+}
+
+.home-page .content .cta {
+    display: inline-block; /* Deixa o botão com comportamento de bloco */
+    background-color: #a476ff; 
+    color: white;
+    padding: 15px 30px; /* Espaçamento interno */
+    font-size: 1.2rem; /* Tamanho do texto do botão */
+    font-weight: bold; /* Negrito no botão */
+    text-transform: uppercase; /* Deixa o texto do botão em maiúsculas */
+    text-decoration: none; /* Remove o sublinhado */
+    transition: background-color 0.3s; /* Efeito ao passar o mouse */
+    letter-spacing: 1px;
+    
+}
+
+.home-page .content .cta:hover {
+    background-color: #bbbbbb; /* Cor de fundo ao passar o mouse */
+}
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 75px 50px; /* Ajusta o espaçamento interno da seção */
+    background-color: #ffffff; /* Cor de fundo */
+    padding-bottom: 35px;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px; /* Espaçamento entre o logo e o texto */
+}
+
+.about-logo img {
+    width: 100px; /* Ajusta o tamanho do logo */
+    height: auto;
+}
+
+.about-text {
+    max-width: 700px; /* Limita a largura do texto */
+    text-align: left; /* Garante o alinhamento à esquerda */
+}
+
+.about-text h2 {
+    font-family: 'Neilvard Three', sans-serif;
+    font-size: 3rem; /* Ajusta o tamanho do título */
+    font-weight: bold;
+    color: #000000; /* Cor preta para o título */
+    margin-bottom: 10px;
+    line-height: 0.5;
+}
+.about-text .about-divider {
+    width: 75px; /* Ajusta a largura da linha */
+    height: 1.9px; /* Define a espessura da linha */
+    background-color: #a476ff; /* Define a cor laranja */
+    border: none;
+    margin: 20px 0 20px; /* Adiciona espaçamento ao redor da linha */
+}
+.about-text p {
+    font-size: 1rem; /* Ajusta o tamanho do texto */
+    line-height: 1.8; /* Ajusta o espaçamento entre linhas */
+    color: #333333; /* Cor cinza escuro */
+}
+
+.opportunities-section {
+    padding: 75px 50px;
+    background-color: #ffffff;
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.opportunities-title h2 {
+    font-family: 'Neilvard Three', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.opportunities-divider {
+    width: 75px;
+    height: 1.9px;
+    background-color: #a476ff;
+    margin: 10px auto 20px;
+}
+
+.opportunities-title p {
+    font-size: 1rem;
+    color: #555555;
+    margin-bottom: 50px;
+}
+
+.opportunities-grid {
+    display: flex;
+    gap: 75px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.opportunity-card {
+    width: 300px;
+    text-align: left;
+}
+
+.opportunity-card h3 {
+    font-family: 'Neilvard Three', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column; /* Organiza o número e o título em linhas diferentes */
+    align-items: flex-start; /* Alinha à esquerda */
+}
+
+.opportunity-card h3 span {
+    color: #a476ff;
+    font-size: 3.5rem;
+    margin-right: 5px;
+}
+
+.opportunity-card p {
+    font-size: 1rem;
+    color: #555555;
+    line-height: 1.5;
+}
+
+.opportunities-button {
+    margin-top: 30px;
+}
+
+.opportunities-button .cta-button {
+    display: inline-block;
+    background-color: #a476ff;
+    color: #ffffff;
+    padding: 15px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.opportunities-button .cta-button:hover {
+    background-color: #bbbbbb;
+}
+
+.contact-section {
+    padding: 75px 50px;
+    background-color: #ffffff;
+    text-align: center;
+    padding-top: 35px;
+}
+
+.contact-section h2 {
+    font-family: 'Neilvard Three', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.contact-divider {
+    width: 75px;
+    height: 1.9px;
+    background-color: #a476ff;
+    margin: 10px auto 20px;
+}
+
+.contact-section p {
+    font-size: 1rem;
+    color: #555555;
+    margin-bottom: 30px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-info div {
+    font-size: 1rem;
+    color: #555555;
+}
+
+.contact-info div span {
+    margin-right: 10px;
+    font-size: 1.2rem;
+    color: #a476ff;
+}
+
+.contact-info div a {
+    color: #555555;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.contact-info .instagram-icon {
+    width: 20px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    margin-right: 10px;
+    vertical-align: middle; /* Alinha verticalmente com o texto */
+}
+
+
+.contact-info div a:hover {
+    color: #7955c3;
+}
+.footer-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 200px;
+    background-color: #b08bfa; /* Mesma cor da nav-bar */
+    height: 60px; /* Altura igual à da nav-bar */
+}
+
+.footer-content {
+    display: flex;
+    gap: 35px; /* Espaçamento entre os links */
+}
+
+.footer-link {
+    text-decoration: none;
+    font-weight: bold;
+    color: white; /* Cor branca para os links */
+    transition: color 0.3s ease;
+}
+.footer-bar a {
+    color: white; /* Define a cor do texto como branco */
+    text-decoration: none; /* Remove o sublinhado */
+    font-weight: bold; /* Opcional, adiciona negrito */
+}
+
+.footer-bar a:hover {
+    text-decoration: underline; /* Adiciona o sublinhado ao passar o mouse */
+    color: #dddddd; /* Opcional, muda a cor ao passar o mouse */
+}
+
+
+.footer-link:hover {
+    color: #d5fdf8; /* Cor clara ao passar o mouse */
+}
+.legal-notice {
+    padding: 50px 200px;
+    color: #333333;
+    font-size: 1rem;
+    line-height: 1.8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.legal-notice h1 {
+    font-family: 'Neilvard Three', sans-serif;
+    font-size: 2.5rem;
+    color: #b08bfa;
+    margin-bottom: 20px;
+}
+
+.voluntariado-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 60px); /* Altura da tela menos a altura da nav-bar */
+    text-align: center;
+    background-color: #ffffff; /* Fundo branco */
+    color: #333333; /* Texto cinza escuro */
+    font-family: 'Roboto', sans-serif;
+}
+
+.voluntariado-page h1 {
+    font-family: 'Neilvard Three', sans-serif;
+    font-size: 4rem; /* Tamanho grande do título */
+    color: #b08bfa; /* Cor do título */
+    margin-bottom: 20px;
+}
+
+.voluntariado-page p {
+    font-size: 1rem; /* Tamanho menor para o texto */
+    color: #555555; /* Cor cinza para o texto */
+}
+@media (max-width: 898px) {
+    
+    .home-page .content {
+        display: flex;
+        flex-direction: row; /* Organiza os elementos verticalmente */
+        justify-content: center; /* Centraliza verticalmente */
+        align-items: center; /* Centraliza horizontalmente */
+        text-align: center; /* Centraliza o texto */
+        padding: 0; /* Remove espaçamentos laterais */
+        height: 100%; /* Garante que ocupa toda a altura da seção */
+    }
+
+    .home-page .content h1 {
+        font-size: 3rem; /* Ajusta o tamanho do título */
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .home-page .content p {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .home-page .content .cta {
+        display: inline-block; /* Garante comportamento de bloco no botão */
+        margin-left: 100px;
+    }
+    .about-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px; /* Ajusta o espaçamento interno da seção */
+        padding-bottom: 35px;
+        gap:20px;
+    }
+    .about-text h2{
+        line-height: 1;
+        text-align: center;
+    }
+    .about-text .about-divider {
+        margin-left: 200px;
+        width: 100px;
+    }
+    .about-text p {
+        text-align: center;
+    
+    }
+    .opportunity-card {
+        width: 300px;
+        text-align: center;
+    }
+    .opportunity-card h3{
+        align-items: center;
+    }
+    .legal-notice {
+        margin-top: 80px;
+        padding: 10px;
+        color: #333333;
+        font-size: 1rem;
+        line-height: 1.8;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .legal-notice h1 {
+        font-family: 'Neilvard Three', sans-serif;
+        font-size: 2.5rem;
+        color: #b08bfa;
+        margin-bottom: 20px;
+    }
+   
+}
+@media (max-width: 600px) {    
+    .home-page {
+        display: none; /* Esconde a seção da home-page */
+    }
+    .nav-bar {
+        justify-content: center; /* Centraliza o conteúdo */
+        padding: 0;
+    }
+
+    .logo {
+        max-width: 600px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .logo img {
+        height: auto;
+        max-height: 50px; /* Mantém um limite de altura */
+    }
+
+    .nav-bar-options {
+        display: none; /* Oculta as opções do menu */
+    }
+    .home-page .content .cta {
+        display: inline-block; /* Garante comportamento de bloco no botão */
+        margin-left: 50px;
+    }
+}
