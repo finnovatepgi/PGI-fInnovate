@@ -5,6 +5,7 @@
     font-style: normal;
 }
 
+
 .nav-bar{
     display: flex;
     justify-content: space-between;
@@ -178,6 +179,55 @@ body {
     font-size: 1rem; /* Ajusta o tamanho do texto */
     line-height: 1.8; /* Ajusta o espaçamento entre linhas */
     color: #333333; /* Cor cinza escuro */
+}
+
+.sobreNos{
+    margin-left: auto;
+    display: inline-block;
+    background-color: #a476ff;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    border: none;
+}
+
+.sobreNos:hover{
+    background-color: #bbbbbb;;
+}
+
+
+#janela{
+    display: none; /* Oculta a janela inicialmente */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+
+.caixadetexto{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 50%;
+    height: 80%;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+.caixadetexto p{
+    text-align: justify;
+    padding: 10% 15%;
+    word-wrap: break-word;
 }
 
 .opportunities-section {
@@ -381,6 +431,7 @@ body {
     margin-bottom: 20px;
 }
 
+
 .voluntariado-page {
     display: flex;
     flex-direction: column;
@@ -404,56 +455,90 @@ body {
     font-size: 1rem; /* Tamanho menor para o texto */
     color: #555555; /* Cor cinza para o texto */
 }
-.sobreNos{
-    margin-left: auto;
+
+/*teste caixas*/
+.voluntariado-caixas {
+    display: flex;
+    flex-direction: row; /* Organiza as caixas na horizontal */
+    justify-content: space-between; /* Distribui caixas: esquerda, centro e direita */
+    align-items: flex-start; /* Alinha as caixas ao topo */
+    height: 100vh; /* Altura ajustada ao conteúdo */
+    gap: 20; /* Espaçamento entre caixas */
+    max-width: 95vw; /* Largura máxima do contêiner */
+    width: 100%; /* Largura total */
+    margin: 0 auto; /* Centraliza o contêiner */
+    padding: 20px;
+}
+
+.voluntariado-caixa {
+    flex: 1; /* Garante que as caixas tenham largura proporcional */
+    min-width: 300px; /* Largura mínima para evitar compressão */
+    max-width: 30%; /* Largura máxima de cada caixa */
+    background-color: #d5fdf8; /* Fundo cinza claro */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 20px; /* Espaçamento interno */
+}
+
+
+.voluntariado-section {
+    padding: 75px 50px;
+    background-color: #d5fdf8;
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+.voluntariado-grid {
+    display: flex;
+    gap: 20vw;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.voluntariado-card {
+    width:auto;
+    text-align: center;
+}
+
+
+.voluntariado-card h3 span {
+    color: #000000;
+    font-size: 3.5rem;
+    margin-right: 5px;
+}
+
+.voluntariado-card p {
+    font-size: 1rem;
+    color: #555555;
+    line-height: 1.5;
+}
+.voluntariado-button {
+    margin-top: 30px;
+}
+
+.voluntariado-button .cta-button {
     display: inline-block;
-    background-color: #a476ff;
+    background-color: #b08bfa;
     color: #ffffff;
+    padding: 15px 30px;
     font-size: 1rem;
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
     transition: background-color 0.3s;
-    border: none;
 }
 
-.sobreNos:hover{
-    background-color: #bbbbbb;;
-}
-
-
-#janela{
-    display: none; /* Oculta a janela inicialmente */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
+.voluntariado-button .cta-button:hover {
+    background-color: #bbbbbb;
 }
 
 
-.caixadetexto{
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 50%;
-    height: 80%;
-    overflow-y: auto;
-    box-sizing: border-box;
-}
+/*teste caixas*/
 
-.caixadetexto p{
-    text-align: justify;
-    padding: 10% 15%;
-    word-wrap: break-word;
-}
-
+    
 @media (max-width: 898px) {
+
     
     .home-page .content {
         display: flex;
