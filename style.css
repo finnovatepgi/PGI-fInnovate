@@ -404,6 +404,55 @@ body {
     font-size: 1rem; /* Tamanho menor para o texto */
     color: #555555; /* Cor cinza para o texto */
 }
+.sobreNos{
+    margin-left: auto;
+    display: inline-block;
+    background-color: #a476ff;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    border: none;
+}
+
+.sobreNos:hover{
+    background-color: #bbbbbb;;
+}
+
+
+#janela{
+    display: none; /* Oculta a janela inicialmente */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+
+.caixadetexto{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 50%;
+    height: 80%;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+.caixadetexto p{
+    text-align: justify;
+    padding: 10% 15%;
+    word-wrap: break-word;
+}
+
 @media (max-width: 898px) {
     
     .home-page .content {
