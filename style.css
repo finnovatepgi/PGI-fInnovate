@@ -470,16 +470,48 @@ body {
     padding: 20px;
 }
 
-.voluntariado-caixa {
+.voluntariado-caixa1 {
     flex: 1; /* Garante que as caixas tenham largura proporcional */
-    min-width: 300px; /* Largura mínima para evitar compressão */
-    max-width: 30%; /* Largura máxima de cada caixa */
-    background-color: #d5fdf8; /* Fundo cinza claro */
-    border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    padding: 20px; /* Espaçamento interno */
+    min-width: 300px;
+    height: 95%; /* Largura mínima para evitar compressão */
+    max-width: 30%; /* Fundo cinza claro */
+    border-radius: 20px; /* Bordas arredondadas */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5); /* Sombra suave */
+    padding: 20px;
+    background-image: url('Fotos/VOLUNTARIADO-SOCIAL.jpg');
+    background-size: cover; /* Ajusta a imagem para cobrir toda a área */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat;
 }
 
+
+
+.voluntariado-caixa2 {
+    flex: 1; /* Garante que as caixas tenham largura proporcional */
+    min-width: 300px;
+    height: 95%; /* Largura mínima para evitar compressão */
+    max-width: 30%; /* Fundo cinza claro */
+    border-radius: 20px; /* Bordas arredondadas */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5); /* Sombra suave */
+    padding: 20px;
+    background-image: url('Fotos/Voluntariado-AMBIENTAL.jpg');
+    background-size: cover; /* Ajusta a imagem para cobrir toda a área */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat;
+}
+.voluntariado-caixa3 {
+    flex: 1; /* Garante que as caixas tenham largura proporcional */
+    min-width: 300px;
+    height: 95%; /* Largura mínima para evitar compressão */
+    max-width: 30%; /* Fundo cinza claro */
+    border-radius: 20px; /* Bordas arredondadas */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5); /* Sombra suave */
+    padding: 20px;
+    background-image: url('Fotos/VOLUNTARIO-EDUCACIONAL.jpg');
+    background-size: cover; /* Ajusta a imagem para cobrir toda a área */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat;
+}
 
 .voluntariado-section {
     padding: 75px 50px;
@@ -503,15 +535,16 @@ body {
 
 
 .voluntariado-card h3 span {
-    color: #000000;
-    font-size: 3.5rem;
+    color: #ffffff;
+    font-size: 2rem;
     margin-right: 5px;
 }
 
 .voluntariado-card p {
     font-size: 1rem;
-    color: #555555;
+    color: #ffffff;
     line-height: 1.5;
+    margin-top:400px;
 }
 .voluntariado-button {
     margin-top: 30px;
@@ -535,13 +568,34 @@ body {
 
 
 /*teste caixas*/
-
+@media(max-width: 1400px){
+    .voluntariado-caixas{
+        display: flex;
+        flex-direction: column; /* Organiza as caixas na vertical */
+        justify-content: flex-start; /* Alinha as caixas no topo */
+        align-items: center; /* Alinha as caixas ao centro da largura */
+        height: 100vh; /* Altura ajustada ao conteúdo */
+        gap: 20px; /* Largura máxima do contêiner */
+        width: 100%; /* Largura total */
+        margin-top: 100px; /* Centraliza o contêiner */
+        padding: 10px;
+    }
+    .voluntariado-caixa1 {
+        width: 100%;
+    }
+    
+    .voluntariado-caixa2 {
+        width: 100%;
+    }
+    .voluntariado-caixa3 {
+        width:100%;
+    }
+}
     
 @media (max-width: 898px) {
 
-    .caixadetexto{
-        width: 80%;
-        height: 80%;
+    .caixadetexto p{
+        font-size:1rem;
     }
     .home-page .content {
         display: flex;
@@ -621,7 +675,10 @@ body {
     .caixadetexto{
         width: 80%;
         height: 80%;
-    }  
+    } 
+    .caixadetexto p{
+        font-size: 1rem;
+    }
     .home-page {
         display: none; /* Esconde a seção da home-page */
     }
